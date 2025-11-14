@@ -41,6 +41,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/myjs.js"></script>
   </head>
   <body>
     <div class="container">
@@ -79,13 +81,26 @@
         </div>
         <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="margin-bottom:10px">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Welcome to my Portfolio</h1>
-          <p class="lead my-3">This Websight is designed to demonstrate my unique skill and contains detais on some of my previous projects to give an example of my skills in action.</p>
-          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">View Projects...</a></p>
+          <h1 class="display-4 font-italic">View my projects</h1>
+          <p class="lead my-3">Sort by Completed or In Progress</p>
+          <nav>
+            <button id="btnAll" onclick="sortByStep('All')" type="button" class="btn btn-outline-success active" style="border-radius: 15px; " >All</button>
+            <button id="btnComp" onclick="sortByStep('Comp')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">Completed</button>
+            <button id="btnInPro" onclick="sortByStep('InPro')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">In Progress</button>
+          </nav>
+          <p class="lead my-3">Select Components</p>
+          <nav>
+            <button id="btnAllS" onclick="sortByTag('All')" type="button" class="btn btn-outline-success active" style="border-radius: 15px; " >All</button>
+            <button id="btnSQL" onclick="sortByTag('SQL')" type="button" class="btn btn-outline-success" style="border-radius: 15px; " >SQL</button>
+            <button id="btnJava" onclick="sortByTag('Java')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">Java</button>
+            <button id="btnHTML" onclick="sortByTag('HTML')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">HTML</button>
+            <button id="btnPython" onclick="sortByTag('Python')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">Python</button>
+            <button id="btnAIML" onclick="sortByTag('AIML')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">AI/Machine Learning</button>
+          </nav>
         </div>
       </div>
       <div class="row mb-2">
-        <div class="col-md-6">
+        <div class="col-md-6 All Comp TagAll SQL" >
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary">About Me</strong>
@@ -99,7 +114,7 @@
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70df%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70df%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 All InPro TagAll Java SQL">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-success">Projects</strong>
@@ -113,7 +128,7 @@
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70e1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70e1%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 All Comp TagAll HTML">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-danger">Contact</strong>
@@ -127,7 +142,7 @@
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70e1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70e1%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 All InPro TagAll Python">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-info">C.V.</strong>
@@ -144,6 +159,151 @@
       </div>
       
     </div>
+    <script>
+      let curStep = "All";
+      let tempB=true;
+      let curTags = ['All'];
+      function sortByStep(step) {
+        curStep = step;
+        let x = document.getElementsByClassName("Comp");
+        let y = document.getElementsByClassName("InPro");
+        let comp = document.getElementById("btnComp");
+        let inPro = document.getElementById("btnInPro");
+        let all = document.getElementById("btnAll");
+        for (var i = 0; i < x.length; i++) {
+          tempB=true;
+          for(var j = 0; j<curTags.length;j++){
+            if (x[i].classList.contains(curTags[j]) ){
+              
+            }else{
+              tempB = false;
+            }
+          }
+          if (tempB){
+            x[i].style.display="block";
+          }
+        }
+        
+        for (var i = 0; i < y.length; i++) {
+          tempB=true;
+          for(var j = 0; j<curTags.length;j++){
+            if (y[i].classList.contains(curTags[j]) ){
+              
+            }else{
+              tempB = false;
+            }
+          }
+          if (tempB){
+            y[i].style.display="block";
+          }
+          
+        }
+        if (step=='InPro'){
+          comp.classList.remove("active");
+          inPro.classList.add("active");
+          all.classList.remove("active");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display="none";
+          }
+        }else if (step=='Comp'){
+          inPro.classList.remove("active");
+          comp.classList.add("active");
+          all.classList.remove("active");
+          for (var i = 0; i < y.length; i++) {
+            y[i].style.display="none";
+          }
+        }else{
+          all.classList.add("active");
+          inPro.classList.remove("active");
+          comp.classList.remove("active");
+        }
+      }
+      function sortByTag(Tag) {
+        curTags.push(Tag);
+        let TagAll = document.getElementsByClassName("TagAll");
+        let SQL = document.getElementsByClassName("SQL");
+        let Java = document.getElementsByClassName("Java");
+        let HTML = document.getElementsByClassName("HTML");
+        let Python = document.getElementsByClassName("Python");
+        let AIML = document.getElementsByClassName("AIML");
+
+        let btnAll = document.getElementById("btnAllS");
+        let btnSQL = document.getElementById("btnSQL");
+        let btnJava = document.getElementById("btnJava");
+        let btnHTML = document.getElementById("btnHTML");
+        let btnPython = document.getElementById("btnPython");
+        let btnAIML = document.getElementById("btnAIML");
+        for(var i = 0; i <TagAll.length; i++){
+          if (TagAll[i].classList.contains(curStep) || Tag=="All"){
+            
+          }else{
+            TagAll[i].style.display="none";
+          }
+        }
+        if(Tag=="SQL"){
+          btnAll.classList.remove("active");
+          btnSQL.classList.add("active");
+        }
+        if(Tag=="Java"){
+          btnAll.classList.remove("active");
+          btnJava.classList.add("active");
+        }
+        if(Tag=="HTML"){
+          btnAll.classList.remove("active");
+          btnHTML.classList.add("active");
+        }
+        if(Tag=="Python"){
+          btnAll.classList.remove("active");
+          btnPython.classList.add("active");
+        }
+        if(Tag=="AIML"){
+          btnAll.classList.remove("active");
+          btnAIML.classList.add("active");
+        }
+        if (Tag=="All"){
+          curTags=[];
+          for (var i = 0; i <SQL.length; i++) {
+            if (SQL[i].classList.contains(curStep)){
+              SQL[i].style.display="block";
+            }
+          }
+          for (var i = 0; i <Java.length; i++) {
+            if (Java[i].classList.contains(curStep)){
+              Java[i].style.display="block";
+            }
+          }
+          for (var i = 0; i <HTML.length; i++) {
+            if (HTML[i].classList.contains(curStep)){
+              HTML[i].style.display="block";
+            }
+          }
+          for (var i = 0; i <Python.length; i++) {
+            if (Python[i].classList.contains(curStep)){
+              Python[i].style.display="block";
+            }
+          }
+          for (var i = 0; i <AIML.length; i++) {
+            if (AIML[i].classList.contains(curStep)){
+              AIML[i].style.display="block";
+            }
+          }
+          btnAll.classList.add("active");
+          btnSQL.classList.remove("active");
+          btnJava.classList.remove("active");
+          btnHTML.classList.remove("active");
+          btnPython.classList.remove("active");
+          btnAIML.classList.remove("active");
+        }
+        for(var i = 0; i <TagAll.length; i++){
+          if (TagAll[i].classList.contains(Tag) || Tag=="All"){
+            
+          }else{
+            TagAll[i].style.display="none";
+          }
+        }
+      }
+    </script>
+    
     <h1 class="col-12 text-center" >Thanks for looking</h1>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
   </body>
