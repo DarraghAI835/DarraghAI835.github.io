@@ -38,6 +38,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="blog.css" rel="stylesheet">
+    <link href="css/myCss.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
@@ -84,76 +85,253 @@
           <h1 class="display-4 font-italic">View my projects</h1>
           <p class="lead my-3">Sort by Completed or In Progress</p>
           <nav>
-            <button id="btnAll" onclick="sortByStep('All')" type="button" class="btn btn-outline-success active" style="border-radius: 15px; " >All</button>
-            <button id="btnComp" onclick="sortByStep('Comp')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">Completed</button>
-            <button id="btnInPro" onclick="sortByStep('InPro')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">In Progress</button>
+            <button id="btnAll" onclick="sortByStep('All')" type="button" class="btn btn-outline-success active" style="border-radius: 15px;margin:5px; " >All</button>
+            <button id="btnComp" onclick="sortByStep('Comp')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Completed</button>
+            <button id="btnInPro" onclick="sortByStep('InPro')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">In Progress</button>
           </nav>
           <p class="lead my-3">Select Components</p>
           <nav>
-            <button id="btnAllS" onclick="sortByTag('All')" type="button" class="btn btn-outline-success active" style="border-radius: 15px; " >All</button>
-            <button id="btnSQL" onclick="sortByTag('SQL')" type="button" class="btn btn-outline-success" style="border-radius: 15px; " >SQL</button>
-            <button id="btnJava" onclick="sortByTag('Java')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">Java</button>
-            <button id="btnHTML" onclick="sortByTag('HTML')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">HTML</button>
-            <button id="btnPython" onclick="sortByTag('Python')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">Python</button>
-            <button id="btnAIML" onclick="sortByTag('AIML')" type="button" class="btn btn-outline-success" style="border-radius: 15px;">AI/Machine Learning</button>
+            <button id="btnAllS" onclick="sortByTag('All')" type="button" class="btn btn-outline-success active" style="border-radius: 15px;margin:5px; " >All</button>
+            <button id="btnSQL" onclick="sortByTag('SQL')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px; " >SQL</button>
+            <button id="btnJava" onclick="sortByTag('Java')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Java</button>
+            <button id="btnHTML" onclick="sortByTag('HTML')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">HTML</button>
+            <button id="btnPython" onclick="sortByTag('Python')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Python</button>
+            <button id="btnAIML" onclick="sortByTag('AIML')" type="button" class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">AI/Machine Learning</button>
           </nav>
         </div>
       </div>
       <div class="row mb-2">
-        <div class="col-md-6 All Comp TagAll SQL" >
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+        <div class="col-md-12 blog-main All Comp TagAll Java" >
+          <div class="card flex-md-row mb-4 box-shadow h-md-250" style="height:auto">
             <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 text-primary">About Me</strong>
+              <!-- <strong class="d-inline-block mb-2 text-success"></strong> -->
+              <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Completed</button>
+              <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Java</button>
+            
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Get to know the creater</a>
+                <a class="text-dark" href="#">Wordle Recreation</a>
               </h3>
               <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">I am a 23 year old Final Year Student of TUS...</p>
-              <a href="#">Continue reading</a>
+             
+                
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides1">
+                    <figure>
+                      <div class="numbertext">1 / 3</div>
+                      <img src="img/myWordle.png" style="width:100%">
+                      <figcaption><strong>The Code in action</strong></figcaption>
+                    </figure>
+                  </div>
+                  <div class="mySlides1">
+                    <figure>
+                      <div class="numbertext">2 / 3</div>
+                      <img src="img/wordleCreateWindow.png" style="width:100%">
+                      <figcaption><strong>Code to create the window</strong></figcaption>
+                    </figure>
+                  </div>
+                  <div class="mySlides1">
+                    <figure>
+                      <div class="numbertext">3 / 3</div>
+                      <img src="img/wordleIsWordCode.png" style="width:100%">
+                      <figcaption><strong>Check if the inputed word is correct</strong></figcaption>
+                    </figure>
+                  </div>
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                
+                <p class="card-text mb-auto">
+                  It might not look as enticing as the real deal, but you can play it as much as you like.<br> This Project uses a Java Gui to allow the user to play wordle in a more user friendly manner then a plain Java terminal would.
+                <br>It's a full stack project with both front and back end processes going on.
+              
+                <video  style="width:100%;"controls>
+                  <source src="video/wordleDemo.mp4" type="video/mp4">
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  Your browser does not support the video tag.
+                </video>
+                <br><br>
+              </p>
+              <h5><a href="#">See the code in GitHub</a></h5>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70df%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70df%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
+          </div>
+        </div>
+        <div class="col-md-12 blog-main All InPro TagAll Python AIML" >
+          <div class="card flex-md-row mb-4 box-shadow h-md-250" style="height:auto">
+            <div class="card-body d-flex flex-column align-items-start">
+              <!-- <strong class="d-inline-block mb-2 text-success"></strong> -->
+              <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">In Progress</button>
+              <nav>
+                <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Python</button>
+                <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">AI/Machine Learning</button>
+              </nav>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Predictive Models</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+             
+                
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides2">
+                    <figure>
+                      <div class="numbertext">1 / 3</div>
+                      <img src="img/LinearRegAnalisis1.png" style="width:100%">
+                      <figcaption><strong>Analising the Facebook data: The best time to post is between 9am and 2pm (excluding 3 outliers earlier in the day. Between 3 pm and 1am are not good times to post.</strong></figcaption>
+                    </figure>
+                  </div>
+                  <div class="mySlides2">
+                    <figure>
+                      <div class="numbertext">2 / 3</div>
+                      <img src="img/makingPredWithoutType.png" style="width:100%">
+                      <figcaption><strong>Predicting How Many People will intereact with a Post </strong></figcaption>
+                    </figure>
+                  </div>
+                  <div class="mySlides2">
+                    <figure>
+                      <div class="numbertext">3 / 3</div>
+                      <img src="img/decisionTreePic.png" style="width:100%">
+                      <figcaption><strong>Visualising the decision tree</strong></figcaption>
+                    </figure>
+                  </div>
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                
+                <p class="card-text mb-auto">
+                  This Project uses python Libaries to implement both <strong>Linear Regression</strong> and <strong>Decision Trees</strong>.<br>
+                  <br><h6>Linear Regression</h6>
+                  The Model Using Linear Regression analises facebook posts from a cosmetic company and tries to predict how many people will interact with the post, based on information such as:<br>
+                  <ul>
+                    <li>Time Posted</li>
+                    <li>Type of Post</li>
+                    <li>Was Facebook paid to advertise it or not</li>
+                  </ul>
+                  <br>
+                  <h6>Decision Trees</h6>
+                  This Model analises a telemarketing campain to try predict how likely it is for someone to subscribe to a long term savings plan, it does this by taking inputs such as 
+                  <ul>
+                    <li>Age</li>
+                    <li>Education Level</li>
+                    <li>If they agreed to previous attempts</li>
+                  </ul>
+              </p>
+              <h5><a href="#">See the code in GitHub</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 blog-main All Comp TagAll Java SQL" >
+          <div class="card flex-md-row mb-4 box-shadow h-md-250" style="height:auto">
+            <div class="card-body d-flex flex-column align-items-start">
+              <!-- <strong class="d-inline-block mb-2 text-success"></strong> -->
+              <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Completed</button>
+              <nav>
+                <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">Java</button>
+                <button   class="btn btn-outline-success" style="border-radius: 15px;margin:5px;">SQL</button>
+              </nav>
+              
+            
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">JDBC Fullstack Database management</a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 10</div>
+             
+                
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides3">
+                    <figure>
+                      <div class="numbertext">1 / 2</div>
+                      <img src="img/JDBCGUI.png" style="width:100%">
+                      <figcaption><strong>The front end</strong></figcaption>
+                    </figure>
+                  </div>
+                  <div class="mySlides3">
+                    <figure>
+                      <div class="numbertext">2 / 2</div>
+                      <img src="img/JDBCAvgAge.png" style="width:100%">
+                      <figcaption><strong>The Exported data Visualised</strong></figcaption>
+                    </figure>
+                  </div>
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+                </div>
+                <br>
+                <!-- The dots/circles -->
+                
+                <p class="card-text mb-auto">
+                  This Project fulling incorporated both the front and back end asspects of Database managment.
+                  <ul>
+                    <li>Creating a SQL database</li>
+                    <li>Creating a Java GUI for a greater user experience</li>
+                    <li>Connecting the two using JDBC (Java Database Connectivity) </li>
+                    <li>Export data so that it can be visualised in excel </li>
+                  </ul>
+              
+                <video  style="width:100%;"controls>
+                  <source src="video/JDBCDatabaseAssignment.mp4" type="video/mp4">
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  Your browser does not support the video tag.
+                </video>
+                <br>
+              </p>
+              <h5><a href="#">See the code in GitHub</a></h5>
+            </div>
           </div>
         </div>
         <div class="col-md-6 All InPro TagAll Java SQL">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250"style="height:auto">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-success">Projects</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">Worlde Projects</a>
               </h3>
               <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">View my project that recreates the magic of Wordle (You're no longer limited to just once a day!)...</p>
-              <a href="#">Continue reading</a>
+              <p class="card-text mb-auto"><img class="card-img-right flex-auto d-none d-md-block"data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="img/camino.png" data-holder-rendered="true" style="width: 200px; height: 250px;float:right;margin-left:10px;">
+                It might not lool as enticing as the real deal, but you can play it as much as you like<br> This Project uses a Java Gui to allow the user to play wordle in a more user friendly manner then a plain Java terminal would
+              </p><a href="#">Continue reading</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70e1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70e1%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
         <div class="col-md-6 All Comp TagAll HTML">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250"style="height:auto">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-danger">Contact</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">Need Code?</a>
               </h3>
               <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">If you think you need someone with my particular skillset, CHOOSE ME!</p>
-              <a href="#">Contact Details</a>
+              <p class="card-text mb-auto"><img class="card-img-right flex-auto d-none d-md-block"data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="img/camino.png" data-holder-rendered="true" style="width: 200px; height: 250px;float:right;margin-left:10px;">
+                It might not lool as enticing as the real deal, but you can play it as much as you like<br> This Project uses a Java Gui to allow the user to play wordle in a more user friendly manner then a plain Java terminal would
+              </p><a href="#">Contact Details</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70e1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70e1%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
         <div class="col-md-6 All InPro TagAll Python">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250"style="height:auto">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-info">C.V.</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">Not convinced by the point above?</a>
               </h3>
               <div class="mb-1 text-muted">Nov 12</div>
-              <p class="card-text mb-auto">Maybe this can convince you...(Slides envelope across the table) </p>
-              <a href="#">Open C.V.</a>
+              <p class="card-text mb-auto"><img class="card-img-right flex-auto d-none d-md-block"data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="img/camino.png" data-holder-rendered="true" style="width: 200px; height: 250px;float:right;margin-left:10px;">
+                It might not lool as enticing as the real deal, but you can play it as much as you like<br> This Project uses a Java Gui to allow the user to play wordle in a more user friendly manner then a plain Java terminal would
+              </p><a href="#">Open C.V.</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19a773e70e1%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19a773e70e1%22%3E%3Crect%20width%3D%22200%22%20height%3D%22250%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2256.1875%22%20y%3D%22131%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="width: 200px; height: 250px;">
           </div>
         </div>
       </div>
@@ -301,6 +479,27 @@
             TagAll[i].style.display="none";
           }
         }
+      }
+      let slideIndex = [1,1,1];
+      /* Class the members of each slideshow group with different CSS classes */
+      let slideId = ["mySlides1", "mySlides2","mySlides3"]
+      showSlides(1,0);
+      showSlides(1,1);
+      showSlides(1,2);
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+
+      function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+        
       }
     </script>
     
